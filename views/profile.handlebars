@@ -1,0 +1,22 @@
+<div id="reg-wrap">
+<h1>Please fill in some more information about yourself.</h1>
+</div>
+<div id="more-pan-wrapper">
+    <img src="moremore.jpg">
+    <div id="profile-wrapper">
+    <form method="POST" action="/profile">
+        <p>Age</p>
+        <input type="text" name="age" placeholder="Age">
+        <p>City</p>
+        <input type="text" name="city" placeholder="City">
+        <p>Homepage</p>
+        <input type="text" name="url" placeholder="Homepage">
+        <div id="submit-button">
+        <button type="continue">Continue!</button>
+        </div>
+        {{errMsg}}
+    </form>
+    </div>
+</div>
+<!-- there's a chance my button may be connected to the other button and where it's going so watch out and
+be aware of that please. -->

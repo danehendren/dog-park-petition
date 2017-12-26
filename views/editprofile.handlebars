@@ -1,0 +1,32 @@
+<div id="reg-wrap">
+    <h1>Edit your profile!</h1>
+</div>
+<div id="playdog">
+    <img src="playdogicon.svg" alt="">
+</div>
+<div id="edit-profile-wrapper">
+    <!-- <img src="closepan.jpg"  > -->
+    <form method="POST" action="/editprofile">
+        <p class="edit-profile-paragraph">First Name</p>
+        <input type="text" name="first" value="{{userInfo.first}}" type="text" required>
+        <p class="edit-profile-paragraph">Last Name</p>
+        <input type="text" name="last" value="{{userInfo.last}}" type="text" required>
+        <p class="edit-profile-paragraph">Email</p>
+        <input type="text" name="email" value="{{userInfo.email}}" type="email" required>
+        <p class="edit-profile-paragraph">Password</p>
+        <input type="password" name="password" value="" type="password">
+        <p class="edit-profile-paragraph">Age</p>
+        <input type="text" name="age" placeholder="" value="{{userInfo.age}}">
+        <p class="edit-profile-paragraph">City</p>
+        <input type="text" name="city" placeholder="" value="{{userInfo.city}}">
+        <p class="edit-profile-paragraph">Homepage</p>
+        <input type="text" name="url" placeholder="" value="{{userInfo.url}}">
+        <div id="submit-button">
+            <button type="continue">Save My Edits!</button>
+            {{message}}
+            <a href="/signed"><p>[ See the other signers here ]</p></a>
+            <a href="/logout"><p>[ Sign Out ]</p></a>
+        </div>
+        {{errMsg}}
+    </form>
+</div>

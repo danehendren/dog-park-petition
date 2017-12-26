@@ -1,0 +1,22 @@
+
+<div id="reg-wrap">
+    <h1>We believe that dogs should be not only able to play outside, off leash but also in a safe place.  Our goal is to bring more dog parks to Bremen. <a href="https://youtu.be/rxBS1E0KZQU?t=18s">For example...</a></h1>
+</div>
+<div id="register-wrapper">
+    <img src="unleashpan.jpg" id="unleash-pan">
+    <form method="POST" action="/register">
+        <p>Vorname</p>
+        <input type="text" name="first" placeholder="first name">
+        <p>Nachname</p>
+        <input type="text" name="last" placeholder="last name">
+        <p>Email address</p>
+        <input type="text" name="email" placeholder="E-mail Address">
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Password">
+        <div id="submit-button">
+            <button type="submit">Sign Up!</button>
+        </div>
+        <h2>Already registered? <a href="/login"> log in here! </a></h2>
+        {{errMsg}}
+    </form>
+</div>
