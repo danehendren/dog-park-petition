@@ -1,5 +1,5 @@
 body {
-    background-color: #B6B9C2;
+    background-color: gray;
 }
 button {
 
@@ -7,7 +7,7 @@ button {
     background-color: #B6D2CA;
     height: 30px;
     text-align: center;
-    border-radius: 50px;
+    /*border-radius: 50px;*/
     clear: right;
     cursor: pointer;
 }
@@ -56,13 +56,34 @@ p {
 }
 a {
     line-height: 20px;
-    color: #931C1D;
+    /*color: #931C1D;*/
+    text-decoration: none;
 }
 ul {
     border-top: solid black 2px;
     padding-top: 0px;
     padding-bottom: 5px;
     border-bottom: solid black 2px;
+}
+.link-hover-style:hover{ background-color: #ACDFAD; padding-top: 10px;}
+
+.link-hover-style {
+    text-decoration: none;
+padding: 2px;
+cursor: pointer;
+margin: 1px;
+border-radius: 5px;
+transition: all 0.5s;
+border: none;
+font-size: 18px;
+font-weight: 300;
+font-family: sans-serif;
+}
+
+.link-hover-style:active {
+    background-color: #611010;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 #text-div {
     display: flex;
@@ -78,13 +99,13 @@ ul {
 }
 #pan-photo {
     border: 3px solid #29657B;
-    border-radius: 80px;
+    /*border-radius: 80px;*/
     height: 150px;
     width: 150px;
 }
 #login-pan-photo {
     border: 3px solid #29657B;
-    border-radius: 80px;
+    /*border-radius: 80px;*/
     height: 150px;
     width: 150px;
 }
@@ -120,8 +141,8 @@ ul {
     justify-content: center;
 }
 video {
-    border: 5px solid #29657B;
-    border-radius: 80px;
+    /*border: 2px solid #29657B;*/
+    /*border-radius: 80px;*/
     width: 140px;
     height: 220px;
 }
@@ -172,10 +193,10 @@ video {
     padding-left: 100px;
 }
 img {
-    border-radius: 80px;
+    /*border-radius: 80px;*/
 }
 input {
-    border-radius: 45px;
+    /*border-radius: 45px;*/
     border: 3px solid #29657B;
     text-align: center;
     background-color: #B6D2CA;
@@ -185,12 +206,12 @@ form {
     text-align: center;
 }
 canvas {
-    width: 500px;
+    width: 400px;
     background-color: #B6D2CA;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     border: 2px solid #29657B;
-    border-radius: 45px;
+    /*border-radius: 45px;*/
     /*padding-top: 10px;*/
     /*position: absolute;*/
 }
